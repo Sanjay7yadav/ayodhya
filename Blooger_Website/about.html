@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/Style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">AYODHYA DARSHAN</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="page.html">Pages</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://mbasic.facebook.com/profile.php?ref_component=mbasic_home_header&ref_page=MMessagingThreadlistController&refid=11"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/watch?v=Hr8HDhhSvZc&t=93s"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  
+
+  <div class="column">
+    <div class="card">
+      <img src="assets/instagram/sky4.jpg" alt="Vini" style="width:100%">
+      <div class="container">
+        <h2>Sanjay Yadav</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum .</p>
+        <p>snyadav138@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="assets/instagram/xyz.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>sky</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum .</p>
+        <p>sky@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="assets/instagram/sanjay1.jpg" alt="sanjay" style="width:100%">
+      <div class="container">
+        <h2>Sanjay Yadav</h2>
+        <p class="title">CEO & Founder</p>
+        <p>I am snajay Yadav from Ayodhya.</p>
+        <p>snyadav138@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
